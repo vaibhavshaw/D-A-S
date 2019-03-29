@@ -1,0 +1,287 @@
+@font-face{
+ font-family: 'Brandon_blk';
+ src: url('../fonts/Brandon_blk.otf');
+ src: url('../fonts/Brandon_blk.otf') format(otf);
+}
+
+
+@import url('../fonts/Brandon_blk.otf');
+@import url('../fonts/CalibreWeb-Bold.woff');
+@font-face{
+ font-family: 'CalibreWeb-Bold';
+ src: url('../fonts/CalibreWeb-Bold.woff');
+ src: url('../fonts/CalibreWeb-Bold.woff') format(woff);
+}
+
+@font-face{
+ font-family: 'OpenSans-Bold';
+ src: url('../fonts/OpenSans-Bold.ttf');
+ src: url('../fonts/OpenSans-Bold.ttf') format(ttf);
+}
+
+
+@import url('../fonts/OpenSans-Bold.ttf');
+
+@font-face{
+ font-family: 'OpenSans-Light';
+ src: url('../fonts/OpenSans-Light.ttf');
+ src: url('../fonts/OpenSans-Light.ttf') format(ttf);
+}
+
+
+@import url('../fonts/OpenSans-Light.ttf');
+
+@font-face{
+ font-family: 'Brandon_reg';
+ src: url('../fonts/Brandon_reg.otf');
+ src: url('../fonts/Brandon_reg.otf') format(otf);
+}
+
+
+@import url('../fonts/Brandon_reg.otf');
+
+.box{
+
+	background:#fafafa;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+.static {
+  position:absolute;
+ 
+}
+
+.static:hover {
+  opacity:0;
+}
+#nav {
+  height: 70px;
+  background: transparent; 
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+  color:#000000;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+#logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 28px;
+  font-family: "Brandon_blk";
+  transition: all ease .5s;
+}
+
+
+#nav.shrink {
+  height: 70px;
+  transition: all ease .5s;
+  background: black;
+}
+
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+
+#mainNav {
+  border-color: rgba(34, 34, 34, 0.05);
+  background-color: white;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  font-family: 'CalibreWeb-Bold', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand {
+  color: orange;
+  font-family: 'CalibreWeb-Bold', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size:30px;
+}
+
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+  color: #fcbd20;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  padding: 8px 10px;
+  color: #222222;
+}
+
+#mainNav .navbar-nav > li > a {
+  font-size: 11px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#mainNav .navbar-nav > li > a.active {
+  color: #fdcc52 !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a.active:hover {
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+  color: #222222;
+}
+
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+  color: #fdcc52;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: fade(white, 70%);
+  }
+  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+    color: white;
+  }
+  #mainNav .navbar-nav > li > a,
+  #mainNav .navbar-nav > li > a:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-nav > li > a:hover,
+  #mainNav .navbar-nav > li > a:focus:hover {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    border-color: rgba(34, 34, 34, 0.1);
+    background-color: white;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #222222;
+  }
+  #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+    color: #fdcc52;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li > a,
+  #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+    color: #222222;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li > a:hover,
+  #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+    color: #fdcc52;
+  }
+}
+
+
+
+
+header.masthead{
+	padding-top:0;
+	padding-bottom:0;
+}
+body{
+	background-color:#FFFFFF;
+}
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+
+ul.unstyled{
+	list-style: none;
+	padding: 0;
+}
+
+a{
+	text-decoration:none;
+	color: #8c9697;
+}
+
+a:hover{
+	text-decoration:none;
+	color: black;
+}
+
+#section1{
+	
+	background-color: #fafafa;
+	
+	height:100vh;
+
+		
+	
+}
+#section2{
+	background-image: url('assets/homeFirst.jpg');
+	background-color: #FFFFFF;
+}
+
+.card-overlap:hover{
+	overflow:hidden;
+	transform: scale(1.1);
+	transition: 1.5s;
+	z-index:999;
+}
+.p-0{
+	padding: 0;
+	margin:0;
+}
+
+.set{
+	position:relative;
+	display:block;
+	max-width: 650px;
+	margin: 0;
+	padding:0;
+}
+hr{
+	max-width:50;
+	border-width:3px;
+}
+
+.gallery-thumb{
+	overflow:hidden;
+}
+.gallery-thumb:hover{
+	transform: scale(1.2);
+	transition: 1.2s;
+}
+
+
+
+
+
+.btn-orange:hover{
+	color:black;
+}
+.btn-orange{
+	background: orange;
+	vertical-align:middle;	
+	font-size:25px;
+	font-family: Brandon_blk;
+	color:#fafafa;
+	padding:10px;
+	
+}
+/*
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fafafa;
+    z-index: 10;
+  }
+
+*/
+
+

@@ -1,0 +1,191 @@
+@font-face{
+ font-family: 'Brandon_blk';
+ src: url('../fonts/Brandon_blk.otf');
+ src: url('../fonts/Brandon_blk.otf') format(otf);
+}
+
+
+@import url('../fonts/Brandon_blk.otf');
+
+@font-face{
+ font-family: 'OpenSans-Bold';
+ src: url('../fonts/OpenSans-Bold.ttf');
+ src: url('../fonts/OpenSans-Bold.ttf') format(ttf);
+}
+
+
+@import url('../fonts/OpenSans-Bold.ttf');
+
+@font-face{
+ font-family: 'OpenSans-Light';
+ src: url('../fonts/OpenSans-Light.ttf');
+ src: url('../fonts/OpenSans-Light.ttf') format(ttf);
+}
+
+
+@import url('../fonts/OpenSans-Light.ttf');
+
+@font-face{
+ font-family: 'Brandon_reg';
+ src: url('../fonts/Brandon_reg.otf');
+ src: url('../fonts/Brandon_reg.otf') format(otf);
+}
+
+
+@import url('../fonts/Brandon_reg.otf');
+
+#nav {
+  height: 70px;
+  background: transparent; 
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+  color:#000000;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+#logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 28px;
+  font-family: "Brandon_blk";
+  transition: all ease .5s;
+}
+
+
+#nav.shrink {
+  height: 70px;
+  transition: all ease .5s;
+  background: black;
+}
+
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+
+.navbar-default {
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;	
+}
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-width: 0px;
+
+}
+header.masthead{
+	padding-top:0;
+	padding-bottom:0;
+}
+body{
+	background-color:#FFFFFF;
+}
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+
+ul.unstyled{
+	list-style: none;
+	padding: 0;
+}
+
+a{
+	text-decoration:none;
+	color: #8c9697;
+}
+
+a:hover{
+	text-decoration:none;
+	color: black;
+}
+
+#section1{
+	background-image: url('../section1OR.jpg');
+	background-size: cover;
+	height:425px;
+	background-attachment: fixed;
+}
+#section2{
+	background-image: url('assets/homeFirst.jpg');
+	background-color: #FFFFFF;
+}
+
+.card-overlap:hover{
+	overflow:hidden;
+	transform: scale(1.1);
+	transition: 1.5s;
+	z-index:999;
+}
+.p-0{
+	padding: 0;
+	margin:0;
+}
+
+.set{
+	position:relative;
+	display:block;
+	max-width: 650px;
+	margin: 0;
+	padding:0;
+}
+hr{
+	max-width:50;
+	border-width:3px;
+}
+
+.gallery-thumb{
+	overflow:hidden;
+}
+.gallery-thumb:hover{
+	transform: scale(1.2);
+	transition: 1.2s;
+}
+
+
+.btn.btn-rounded {
+    border-radius: 50px;
+}
+.btn.btn-white {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #232323;
+}
+.btn.btn-small {
+    font-size: 11px;
+    padding: 4px 24px;
+}
+
+
+.btn-default {
+  font-family: Brandon_blk;
+  font-size: 18px;
+  color: rgba(252, 253, 255, 0.75);
+  letter-spacing: 1px;
+  line-height: 30px;
+  border: 2px solid rgba(252, 253, 255, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-default:hover {
+  color: #FFF;
+  background: rgba(252, 253, 255, 0.75);
+  border: 2px solid rgba(252, 253, 255, 0.75);
+}
+
+
+
+footer{
+	background: #d3d3d3;
+	color: black;
+	font-size: 11px;
+	padding: 20px;
+}
+
